@@ -1,0 +1,49 @@
+{
+    "listaAnimes": [
+        {   
+        "id": 1, 
+        "titulo": "Araburu Kisetsu no Otome-domo yo", 
+        "rating": 7, 
+        "tipo": "Serie", 
+        "season": "Summer", 
+        "categoria": ["Comedy", "Drama", "Romance", "Slice of Life"]
+    },
+
+        {   
+        "id": 2, 
+        "titulo": "Kuzu no Honkai", 
+        "rating": 7, 
+        "tipo": "Serie", 
+        "season": "Winter", 
+        "categoria": ["Drama", "Romance", "Ecchi", "Psychological"]
+    },
+
+        {   
+        "id": 3, 
+        "titulo": "Domestic na Kanojo", 
+        "rating": 6, 
+        "tipo": "Serie", 
+        "season": "Winter", 
+        "categoria": ["Drama", "Romance", "Ecchi"]
+    },
+
+        {   
+        "id": 4, 
+        "titulo": "Liz to Aoi Tori", 
+        "rating": 8, 
+        "tipo": "Serie", 
+        "season": "Spring", 
+        "categoria": ["Drama", "Music", "Slice of Life"]
+    },
+
+        {   
+        "id": 5, 
+        "titulo": "Koe no Katachi", 
+        "rating": 9, 
+        "tipo": "Serie", 
+        "season": "Summer", 
+        "categoria": ["Drama", "Romance", "Slice of Life"]
+    }
+
+    ]
+ }
