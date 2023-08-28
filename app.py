@@ -55,19 +55,19 @@ def index():
 
 #Mostrar la lista de animes
 @app.route('/anime', methods=['GET'])
-def get_animes():
+def getAnimes():
     return jsonify(listaAnimes)
 
 #Crear un nuevo anime
 @app.route('/anime', methods=['POST'])
-def create_anime():
+def createAnime():
     data = request.get_json()
     listaAnimes.append(data)
     return jsonify(data), 201
 
 #Obtener un anime por ID
 @app.route('/anime/<int:id>', methods=['GET'])
-def get_anime(id):
+def getAnime(id):
     if id < len(listaAnimes):
         anime = listaAnimes[id]  
     else:
@@ -76,7 +76,7 @@ def get_anime(id):
 
 #Eliminar un anime por ID
 @app.route('/anime/<int:id>', methods=['DELETE'])
-def delete_anime(id):
+def deleteAnime(id):
     if id < len(listaAnimes):
         deleted_anime = listaAnimes.pop(id)
         return jsonify(deleted_anime), 200
@@ -85,7 +85,7 @@ def delete_anime(id):
 
 #Actualizar un anime por ID
 @app.route('/anime/<int:id>', methods=['PUT'])
-def update_anime(id):
+def updateAnime(id):
     data = request.get_json()
     if id < len(listaAnimes):
         listaAnimes[id] = data
@@ -95,7 +95,7 @@ def update_anime(id):
 
 #Actualizar parcialmente un anime por ID
 @app.route('/anime/<int:id>', methods=['PATCH'])
-def patch_anime(id):
+def patchAnime(id):
     data = request.get_json()
     if id < len(listaAnimes):
         current_anime = listaAnimes[id]
